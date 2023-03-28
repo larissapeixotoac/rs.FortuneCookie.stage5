@@ -11,6 +11,7 @@ let randomNumber = Math.round(Math.random() * 20)
 // Events
 findLuck.addEventListener('click', tryLuck)
 findLuckAgain.addEventListener('click', tryLuck)
+document.addEventListener('keydown', handlePressEnter)
 
 
 // Functions
@@ -32,6 +33,14 @@ function chooseMessage() {
 
     randomNumber = Math.round(Math.random() * 20)
 }
+
+function handlePressEnter(event) {        
+    if(event.key == 'Enter' && screen1.classList.contains('hide')) {
+        event.preventDefault() 
+        tryLuck(event)
+    }
+}
+
 
 function generateMsgName() {
     if(listOfMessages.length == 0) {

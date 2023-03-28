@@ -10,7 +10,7 @@
 
 body {
     background: linear-gradient(45deg, #190361 0%, #BB00FF 100%);
-
+    
     height: 100vh;
 
     display: grid;
@@ -121,6 +121,7 @@ button:hover {
     animation: msgAppering 2s;
 }
 
+
 /* Aniamtion */
 @keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
@@ -144,4 +145,15 @@ button:hover {
     to {
         transform: translateY(0px) scale(1);
     }
+}
+
+@media (max-width: 90rem) {
+    main {
+        width: min(42.8rem, 65%);
+    }
+
+    .screen1 #findLuck {
+        animation: shake 500ms infinite;
+    }
+
 }
