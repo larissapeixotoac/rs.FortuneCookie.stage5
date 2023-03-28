@@ -29,7 +29,7 @@ main {
     box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
     border-radius: 5px;
 
-    width: min(42.8rem, 80%);
+    width: min(42.8rem, 90%);
     margin-top: -12rem;
 
     display: flex;
@@ -156,11 +156,7 @@ button:hover {
         justify-content: center;
         align-items: center;
     }
-
-    main {
-        width: min(42.8rem, 65%);
-    }
-
+    
     .screen1 #findLuck {
         animation: shake 500ms infinite;
     }
