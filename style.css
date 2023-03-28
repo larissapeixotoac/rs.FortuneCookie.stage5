@@ -149,7 +149,7 @@ button:hover {
 
 @media (max-width: 90rem) {
     main {
-        width: min(42.8rem, 70%);
+        width: min(42.8rem, 75%);
     }
 
     .screen1 #findLuck {
